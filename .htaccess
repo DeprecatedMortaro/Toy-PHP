@@ -1,0 +1,5 @@
+Options +FollowSymLinks  
+RewriteEngine On
+RewriteRule \.(jpg|png|php|js|css)$ - [L]
+RewriteRule ^$ /lib/framework.php [L]
+RewriteRule ^(.*)$ /lib/framework.php?q=$1 [L,QSA]
