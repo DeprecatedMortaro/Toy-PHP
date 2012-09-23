@@ -41,7 +41,7 @@
 
   foreach(loadDir('../lib') as $file){
     if($file != '../lib/framework.php')
-      include($file);
+      require($file);
   }
 
   function underscore($string){
